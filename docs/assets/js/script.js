@@ -124,15 +124,70 @@ const formBtn = document.querySelector("[data-form-btn]");
 for (let i = 0; i < formInputs.length; i++) {
   formInputs[i].addEventListener("input", function () {
 
-    // check form validation
+    // check form validation and enable button
     if (form.checkValidity()) {
       formBtn.removeAttribute("disabled");
+      formBtn.style.opacity = "1";
+      formBtn.style.cursor = "pointer";
     } else {
       formBtn.setAttribute("disabled", "");
+      formBtn.style.opacity = "0.7";
+      formBtn.style.cursor = "not-allowed";
     }
 
   });
 }
+
+// Form submission with feedback
+form.addEventListener("submit", function(e) {
+  e.preventDefault(); // Prevent default form submission
+
+  // Show loading state
+  const originalBtnText = formBtn.innerHTML;
+  formBtn.innerHTML = '<ion-icon name="cloud-upload"></ion-icon><span>Sending...</span>';
+  formBtn.disabled = true;
+
+  // Use fetch to submit the form
+  fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    headers: {
+      'Accept': 'application/json'
+    }
+  }).then(response => {
+    if (response.ok) {
+      // Show success message
+      formBtn.innerHTML = '<ion-icon name="checkmark-circle"></ion-icon><span>Message Sent!</span>';
+
+      // Reset form
+      form.reset();
+
+      // Re-enable button after delay
+      setTimeout(() => {
+        formBtn.innerHTML = originalBtnText;
+        formBtn.disabled = false;
+
+        // Re-validate form to update button state
+        if (!form.checkValidity()) {
+          formBtn.setAttribute("disabled", "");
+          formBtn.style.opacity = "0.7";
+          formBtn.style.cursor = "not-allowed";
+        }
+      }, 3000);
+    } else {
+      throw new Error('Form submission failed');
+    }
+  }).catch(error => {
+    // Show error message
+    formBtn.innerHTML = '<ion-icon name="alert"></ion-icon><span>Error! Try again</span>';
+
+    // Re-enable button after delay
+    setTimeout(() => {
+      formBtn.innerHTML = originalBtnText;
+      formBtn.disabled = false;
+    }, 3000);
+  });
+});
 
 
 

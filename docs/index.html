@@ -1,117 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Misagh Fereidounpour - Personal Portfolio</title>
+    <!-- SEO Meta Tags -->
+    <title>
+      Misagh Fereidounpour - ICT Consultant | Web Development & Systems
+      Architecture
+    </title>
+    <meta
+      name="title"
+      content="Misagh Fereidounpour - ICT Consultant | Web Development & Systems Architecture"
+    />
+    <meta
+      name="description"
+      content="Professional ICT Consultant based in Isfahan, Iran. Specializing in web development, systems architecture, cloud solutions, and IT consulting."
+    />
+    <meta
+      name="keywords"
+      content="ICT Consultant, Web Development, Systems Architecture, Cloud Solutions, IT Consulting, Iran, Isfahan"
+    />
+    <meta name="author" content="Misagh Fereidounpour" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://misafer.ir/" />
 
-  <!--
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://misafer.ir/" />
+    <meta property="og:title" content="Misagh Fereidounpour - ICT Consultant" />
+    <meta
+      property="og:description"
+      content="Professional ICT Consultant based in Isfahan, Iran. Specializing in web development, systems architecture, cloud solutions, and IT consulting."
+    />
+    <meta
+      property="og:image"
+      content="https://misafer.ir/assets/images/my-avatar.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://misafer.ir/" />
+    <meta
+      property="twitter:title"
+      content="Misagh Fereidounpour - ICT Consultant"
+    />
+    <meta
+      property="twitter:description"
+      content="Professional ICT Consultant based in Isfahan, Iran. Specializing in web development, systems architecture, cloud solutions, and IT consulting."
+    />
+    <meta
+      property="twitter:image"
+      content="https://misafer.ir/assets/images/my-avatar.png"
+    />
+
+    <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
 
-  <!--
+    <!--
+    - Preload critical resources
+  -->
+    <link rel="preload" href="./assets/css/style.css" as="style" />
+    <link rel="preload" href="./assets/js/script.js" as="script" />
+
+    <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!--
+    <!--
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
-  <!--
+    <!--
+    - Preconnect to external resources
+  -->
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="dns-prefetch" href="https://unpkg.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+    <!--
+    - Structured Data / Schema.org
+  -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Misagh Fereidounpour",
+        "jobTitle": "ICT Consultant",
+        "url": "https://misafer.ir",
+        "sameAs": [
+          "https://linkedin.com/in/misafer",
+          "https://instagram.com/misafer"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Isfahan",
+          "addressCountry": "IR"
+        },
+        "description": "ICT Consultant specializing in web development, systems architecture, cloud solutions, and IT consulting."
+      }
+    </script>
+
+    <!--
+    - Google Analytics
+  -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-XXXXXXXXXX");
+    </script>
+  </head>
+
+  <body>
+    <!--
     - #MAIN
   -->
 
-  <main>
-    <!--
+    <main>
+      <!--
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
-      <div class="sidebar-info">
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Misagh Fereidounpour" width="80" />
-        </figure>
+      <aside class="sidebar" data-sidebar role="banner" aria-label="Contact information">
+        <div class="sidebar-info">
+          <figure class="avatar-box" aria-hidden="true">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Misagh Fereidounpour"
+              width="80"
+            />
+          </figure>
 
-        <div class="info-content">
-          <h1 class="name" title="Misagh Fereidounpour">
-            Misagh <br /> Fereidounpour
-          </h1>
-          <p class="title">ICT Consultant</p>
+          <div class="info-content">
+            <h1 class="name" title="Misagh Fereidounpour">
+              Misagh <br />
+              Fereidounpour
+            </h1>
+            <p class="title">ICT Consultant</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn aria-expanded="false" aria-controls="contact-details">
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <div class="sidebar-info_more" id="contact-details" aria-hidden="true">
+          <div class="separator" role="separator" aria-label="Separator"></div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-      </div>
+          <ul class="contacts-list" role="list">
+            <li class="contact-item">
+              <div class="icon-box" aria-hidden="true">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-      <div class="sidebar-info_more">
-        <div class="separator"></div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
 
-        <ul class="contacts-list">
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
+                <a href="mailto:misafer@outlook.com" class="contact-link" aria-label="Send email to misafer@outlook.com">misafer@outlook.com</a>
+              </div>
+            </li>
 
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
+            <li class="contact-item">
+              <div class="icon-box" aria-hidden="true">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
 
-              <a href="mailto:misafer@outlook.com" class="contact-link">misafer@outlook.com</a>
-            </div>
-          </li>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
 
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
+                <a href="tel:+989136031652" class="contact-link" aria-label="Call +98 913 603 1652">+98 (913) 603-1652</a>
+              </div>
+            </li>
 
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
+            <li class="contact-item">
+              <div class="icon-box" aria-hidden="true">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
 
-              <a href="tel:+989136031652" class="contact-link">+98 (913) 603-1652</a>
-            </div>
-          </li>
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
 
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
+                <time datetime="">**private**</time>
+              </div>
+            </li>
 
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
+            <li class="contact-item">
+              <div class="icon-box" aria-hidden="true">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-              <time datetime="">**private**</time>
-            </div>
-          </li>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
 
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
+                <address>Isfahan, Iran</address>
+              </div>
+            </li>
+          </ul>
 
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
+          <div class="separator" role="separator" aria-label="Separator"></div>
 
-              <address>Isfahan, Iran</address>
-            </div>
-          </li>
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-          <!-- <li class="social-item">
+          <ul class="social-list" role="list">
+            <!-- <li class="social-item">
               <a title="facebook" href="#" class="social-link">
                 <ion-icon name="logo-facebook"></ion-icon>
               </a>
@@ -123,927 +236,916 @@
               </a>
             </li> -->
 
-          <li class="social-item">
-            <a title="instagram" href="https://instagram.com/misafer" class="social-link" target="_blank"
-              rel="noopener">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
+            <li class="social-item">
+              <a
+                aria-label="Instagram profile"
+                href="https://instagram.com/misafer"
+                class="social-link"
+                target="_blank"
+                rel="noopener"
+              >
+                <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                <span class="sr-only">Instagram</span>
+              </a>
+            </li>
 
-          <li class="social-item">
-            <a title="linkedin" href="https://linkedin.com/in/misafer" class="social-link" target="_blank"
-              rel="noopener">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </aside>
+            <li class="social-item">
+              <a
+                aria-label="LinkedIn profile"
+                href="https://linkedin.com/in/misafer"
+                class="social-link"
+                target="_blank"
+                rel="noopener"
+              >
+                <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
+                <span class="sr-only">LinkedIn</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
 
-    <!--
+      <!--
       - #main-content
     -->
 
-    <div class="main-content">
-      <!--
+      <div class="main-content">
+        <!--
         - #NAVBAR
       -->
 
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link>About</button>
-          </li>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+          <ul class="navbar-list" role="list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link aria-current="page">About</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-        </ul>
-      </nav>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
 
-      <!--
+        <!--
         - #ABOUT
       -->
 
-      <article class="about active" data-page="about">
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-        <section class="about-text">
-          <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia,
-            working in web development and print media. I enjoy turning
-            complex problems into simple, beautiful and intuitive designs.
-          </p>
+          <section class="about-text">
+            <p>
+              I'm an ICT Consultant based in Isfahan, Iran, specializing in web
+              development, systems architecture, and technology solutions. I
+              enjoy turning complex business requirements into efficient,
+              scalable, and maintainable technical solutions.
+            </p>
 
-          <p>
-            My job is to build your website so that it is functional and
-            user-friendly but at the same time attractive. Moreover, I add
-            personal touch to your product and make sure that is eye-catching
-            and easy to use. My aim is to bring across your message and
-            identity in the most creative way. I created web design for many
-            famous brand companies and Clients.
-          </p>
-        </section>
+            <p>
+              My expertise lies in building robust web applications and systems
+              that are both functional and user-friendly. I focus on creating
+              solutions that are maintainable, secure, and optimized for
+              performance. My goal is to bridge the gap between business needs
+              and technical implementation, delivering solutions that add real
+              value.
+            </p>
+          </section>
 
-        <!--
+          <!--
           - service
         -->
 
-        <section class="service">
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <section class="service">
+            <h3 class="h3 service-title">What I do</h3>
 
-          <ul class="service-list">
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40" />
-              </div>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web Development</h4>
 
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a
-                  professional level.
-                </p>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40" />
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40" />
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and
-                  Android.
-                </p>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40" />
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  I make high-quality photos of any category at a professional
-                  level.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar />
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>
-                  Daniel lewis
-                </h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were
-                    very pleased with the work done. She has a lot of
-                    experience and is very concerned about the needs of
-                    client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing elit, seds do et eiusmod tempor
-                    incididunt ut laborels dolore magnarels alia.
+                  <p class="service-item-text">
+                    Building modern, responsive web applications using
+                    cutting-edge technologies and best practices.
                   </p>
                 </div>
-              </div>
-            </li>
+              </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar />
-                </figure>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg"
+                    alt="Systems Architecture icon"
+                    width="40"
+                  />
+                </div>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>
-                  Jessica miller
-                </h4>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Systems Architecture</h4>
 
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were
-                    very pleased with the work done. She has a lot of
-                    experience and is very concerned about the needs of
-                    client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing elit, seds do et eiusmod tempor
-                    incididunt ut laborels dolore magnarels alia.
+                  <p class="service-item-text">
+                    Designing scalable and secure IT infrastructure and
+                    application architectures for businesses.
                   </p>
                 </div>
-              </div>
-            </li>
+              </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar />
-                </figure>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="IT Consulting icon"
+                    width="40"
+                  />
+                </div>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>
-                  Emily evans
-                </h4>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">IT Consulting</h4>
 
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were
-                    very pleased with the work done. She has a lot of
-                    experience and is very concerned about the needs of
-                    client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing elit, seds do et eiusmod tempor
-                    incididunt ut laborels dolore magnarels alia.
+                  <p class="service-item-text">
+                    Providing strategic guidance on technology solutions and
+                    digital transformation initiatives.
                   </p>
                 </div>
-              </div>
-            </li>
+              </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar />
-                </figure>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-photo.svg"
+                    alt="Cloud Solutions icon"
+                    width="40"
+                  />
+                </div>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>
-                  Henry william
-                </h4>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Cloud Solutions</h4>
 
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were
-                    very pleased with the work done. She has a lot of
-                    experience and is very concerned about the needs of
-                    client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing elit, seds do et eiusmod tempor
-                    incididunt ut laborels dolore magnarels alia.
+                  <p class="service-item-text">
+                    Implementing and managing cloud infrastructure and migration
+                    strategies for businesses.
                   </p>
                 </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-            <button title="close" class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img />
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon" />
-            </div>
-
-            <div class="modal-content">
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were
-                  very pleased with the work done. She has a lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum
-                  dolor sit amet, ullamcous cididt consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels
-                  dolore magnarels alia.
-                </p>
-              </div>
-            </div>
+              </li>
+            </ul>
           </section>
-        </div>
+        </article>
 
         <!--
-          - clients
-        -->
-
-        <section class="clients">
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo" />
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo" />
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo" />
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo" />
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo" />
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo" />
-              </a>
-            </li>
-          </ul>
-        </section>
-      </article>
-
-      <!--
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
 
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
             </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Master of Science in Information Technology
+                </h4>
 
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">
-                University school of the arts
-              </h4>
+                <span>2010 — 2012</span>
 
-              <span>2007 — 2008</span>
+                <p class="timeline-text">
+                  University of Isfahan, Iran - Specialized in Systems
+                  Architecture and Network Security with focus on enterprise
+                  solutions.
+                </p>
+              </li>
 
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
-                delenit atque corrupti, quos dolores et quas molestias
-                exceptur.
-              </p>
-            </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Bachelor of Science in Computer Engineering
+                </h4>
 
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
+                <span>2006 — 2010</span>
 
-              <span>2006 — 2007</span>
+                <p class="timeline-text">
+                  University of Isfahan, Iran - Focused on software development,
+                  database systems, and network architecture.
+                </p>
+              </li>
+            </ol>
+          </section>
 
-              <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere
-                menda ossimus, omnis voluptas assumenda est omnis..
-              </p>
-            </li>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">
-                High school of art and design
-              </h4>
-
-              <span>2002 — 2004</span>
-
-              <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila
-                voluptas mag odit aut fugit, sed consequuntur magni dolores
-                eos.
-              </p>
-            </li>
-          </ol>
-        </section>
-
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Experience</h3>
             </div>
 
-            <h3 class="h3">Experience</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Senior ICT Consultant</h4>
 
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Creative director</h4>
+                <span>2018 — Present</span>
 
-              <span>2015 — Present</span>
+                <p class="timeline-text">
+                  Providing strategic IT consulting to businesses in Iran and
+                  the Middle East, specializing in cloud migration, system
+                  architecture, and digital transformation. Led multiple
+                  enterprise-level projects involving complex system
+                  integrations.
+                </p>
+              </li>
 
-              <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum
-                delenit atque corrupti, quos dolores et qvuas molestias
-                exceptur.
-              </p>
-            </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Systems Architect</h4>
 
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Art director</h4>
+                <span>2014 — 2018</span>
 
-              <span>2013 — 2015</span>
+                <p class="timeline-text">
+                  Designed and implemented scalable IT infrastructure for medium
+                  to large enterprises. Specialized in creating secure,
+                  efficient systems that meet business requirements while
+                  maintaining high performance standards.
+                </p>
+              </li>
 
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
-                delenit atque corrupti, quos dolores et quas molestias
-                exceptur.
-              </p>
-            </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Web Development Specialist
+                </h4>
 
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Web designer</h4>
+                <span>2010 — 2014</span>
 
-              <span>2010 — 2013</span>
+                <p class="timeline-text">
+                  Developed and maintained web applications for various clients,
+                  focusing on both frontend and backend solutions. Implemented
+                  modern development practices and technologies to deliver
+                  high-quality web solutions.
+                </p>
+              </li>
+            </ol>
+          </section>
 
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
-                delenit atque corrupti, quos dolores et quas molestias
-                exceptur.
-              </p>
-            </li>
-          </ol>
-        </section>
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
 
-        <section class="skill">
-          <h3 class="h3 skills-title">My skills</h3>
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Web Development</h5>
+                  <data value="90">90%</data>
+                </div>
 
-          <ul class="skills-list content-card">
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%"></div>
-              </div>
-            </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Systems Architecture</h5>
+                  <data value="85">85%</data>
+                </div>
 
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%"></div>
-              </div>
-            </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Cloud Solutions</h5>
+                  <data value="80">80%</data>
+                </div>
 
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%"></div>
-              </div>
-            </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">IT Consulting</h5>
+                  <data value="95">95%</data>
+                </div>
 
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 95%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%"></div>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </article>
-
-      <!--
+        <!--
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
 
-        <section class="projects">
-          <ul class="filter-list">
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-          </ul>
-
-          <div class="filter-select-box">
-            <button class="filter-select" data-select>
-              <div class="select-value" data-selecct-value>
-                Select category
-              </div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-            </button>
-
-            <ul class="select-list">
-              <li class="select-item">
-                <button data-select-item>All</button>
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Web design</button>
+              <li class="filter-item">
+                <button data-filter-btn>Web Development</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Applications</button>
+              <li class="filter-item">
+                <button data-filter-btn>System Architecture</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Web development</button>
+              <li class="filter-item">
+                <button data-filter-btn>Cloud Solutions</button>
               </li>
             </ul>
-          </div>
 
-          <ul class="project-list">
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy" />
-                </figure>
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
 
-                <h3 class="project-title">Finance</h3>
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
 
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
+                <li class="select-item">
+                  <button data-select-item>Web Development</button>
+                </li>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                <li class="select-item">
+                  <button data-select-item>System Architecture</button>
+                </li>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy" />
-                </figure>
+                <li class="select-item">
+                  <button data-select-item>Cloud Solutions</button>
+                </li>
+              </ul>
+            </div>
 
-                <h3 class="project-title">Orizon</h3>
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
+                    <img
+                      src="./assets/images/project-1.jpg"
+                      alt="Enterprise Resource Planning System"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            <li class="project-item active" data-filter-item data-category="web design">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <h3 class="project-title">ERP System</h3>
 
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy" />
-                </figure>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
 
-                <h3 class="project-title">Fundo</h3>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="cloud solutions"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <p class="project-category">Web design</p>
-              </a>
-            </li>
+                    <img
+                      src="./assets/images/project-2.png"
+                      alt="Cloud Migration Solution"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            <li class="project-item active" data-filter-item data-category="applications">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <h3 class="project-title">Cloud Migration</h3>
 
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy" />
-                </figure>
+                  <p class="project-category">Cloud Solutions</p>
+                </a>
+              </li>
 
-                <h3 class="project-title">Brawlhalla</h3>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="system architecture"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <p class="project-category">Applications</p>
-              </a>
-            </li>
+                    <img
+                      src="./assets/images/project-3.jpg"
+                      alt="Network Security Infrastructure"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            <li class="project-item active" data-filter-item data-category="web design">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <h3 class="project-title">Security Infra</h3>
 
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy" />
-                </figure>
+                  <p class="project-category">System Architecture</p>
+                </a>
+              </li>
 
-                <h3 class="project-title">DSM.</h3>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <p class="project-category">Web design</p>
-              </a>
-            </li>
+                    <img
+                      src="./assets/images/project-4.png"
+                      alt="Customer Management Platform"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            <li class="project-item active" data-filter-item data-category="web design">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <h3 class="project-title">Customer Portal</h3>
 
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy" />
-                </figure>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
 
-                <h3 class="project-title">MetaSpark</h3>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="system architecture"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <p class="project-category">Web design</p>
-              </a>
-            </li>
+                    <img
+                      src="./assets/images/project-5.png"
+                      alt="Data Center Architecture"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <h3 class="project-title">Data Center</h3>
 
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy" />
-                </figure>
+                  <p class="project-category">System Architecture</p>
+                </a>
+              </li>
 
-                <h3 class="project-title">Summary</h3>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="cloud solutions"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
+                    <img
+                      src="./assets/images/project-6.png"
+                      alt="Multi-Cloud Management Platform"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            <li class="project-item active" data-filter-item data-category="applications">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <h3 class="project-title">Multi-Cloud Mgmt</h3>
 
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy" />
-                </figure>
+                  <p class="project-category">Cloud Solutions</p>
+                </a>
+              </li>
 
-                <h3 class="project-title">Task Manager</h3>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <p class="project-category">Applications</p>
-              </a>
-            </li>
+                    <img
+                      src="./assets/images/project-7.png"
+                      alt="Business Intelligence Dashboard"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <h3 class="project-title">BI Dashboard</h3>
 
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy" />
-                </figure>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
 
-                <h3 class="project-title">Arrival</h3>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="system architecture"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
-          </ul>
-        </section>
-      </article>
+                    <img
+                      src="./assets/images/project-8.jpg"
+                      alt="Enterprise Integration Solution"
+                      loading="lazy"
+                    />
+                  </figure>
 
-      <!--
+                  <h3 class="project-title">Integration Hub</h3>
+
+                  <p class="project-category">System Architecture</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="cloud solutions"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-9.png"
+                      alt="DevOps Automation Platform"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">DevOps Platform</h3>
+
+                  <p class="project-category">Cloud Solutions</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
         - #BLOG
       -->
 
-      <article class="blog" data-page="blog">
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
 
-        <section class="blog-posts">
-          <ul class="blog-posts-list">
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy" />
-                </figure>
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-1.jpg"
+                      alt="Modern Cloud Architecture Patterns"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Cloud Computing</p>
 
-                    <span class="dot"></span>
+                      <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                      <time datetime="2023-10-15">Oct 15, 2023</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Modern Cloud Architecture Patterns
+                    </h3>
+
+                    <p class="blog-text">
+                      Exploring the latest patterns for scalable and resilient
+                      cloud infrastructure.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">
-                    Design conferences in 2022
-                  </h3>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-2.jpg"
+                      alt="Cybersecurity Best Practices for SMEs"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt,
-                    explicabo.
-                  </p>
-                </div>
-              </a>
-            </li>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Security</p>
 
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy" />
-                </figure>
+                      <span class="dot"></span>
 
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                      <time datetime="2023-09-22">Sep 22, 2023</time>
+                    </div>
 
-                    <span class="dot"></span>
+                    <h3 class="h3 blog-item-title">
+                      Cybersecurity Best Practices for SMEs
+                    </h3>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Essential security measures for small and medium
+                      enterprises in the digital age.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">
-                    Best fonts every designer
-                  </h3>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-3.jpg"
+                      alt="Digital Transformation in the Middle East"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis
-                    est eligendi.
-                  </p>
-                </div>
-              </a>
-            </li>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Digital Strategy</p>
 
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy" />
-                </figure>
+                      <span class="dot"></span>
 
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                      <time datetime="2023-08-30">Aug 30, 2023</time>
+                    </div>
 
-                    <span class="dot"></span>
+                    <h3 class="h3 blog-item-title">
+                      Digital Transformation in the Middle East
+                    </h3>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Key trends and opportunities for technology adoption in
+                      regional businesses.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-4.jpg"
+                      alt="DevOps Practices for Enterprise"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis
-                    nostrum exercitationem ullam corporis suscipit.
-                  </p>
-                </div>
-              </a>
-            </li>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">DevOps</p>
 
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy" />
-                </figure>
+                      <span class="dot"></span>
 
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                      <time datetime="2023-07-18">Jul 18, 2023</time>
+                    </div>
 
-                    <span class="dot"></span>
+                    <h3 class="h3 blog-item-title">
+                      DevOps Practices for Enterprise
+                    </h3>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Implementing DevOps methodologies in large organizations
+                      with legacy systems.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">
-                    UI interactions of the week
-                  </h3>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-5.jpg"
+                      alt="The Future of Remote Work Infrastructure"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis
-                    nostrud exercitation ullamco laboris nisi.
-                  </p>
-                </div>
-              </a>
-            </li>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Technology</p>
 
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy" />
-                </figure>
+                      <span class="dot"></span>
 
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                      <time datetime="2023-06-12">Jun 12, 2023</time>
+                    </div>
 
-                    <span class="dot"></span>
+                    <h3 class="h3 blog-item-title">
+                      The Future of Remote Work Infrastructure
+                    </h3>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      How enterprises are adapting their technology stack for
+                      distributed teams.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">
-                    The forgotten art of spacing
-                  </h3>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-6.jpg"
+                      alt="API Design Principles"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
-                  </p>
-                </div>
-              </a>
-            </li>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Development</p>
 
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy" />
-                </figure>
+                      <span class="dot"></span>
 
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                      <time datetime="2023-05-07">May 7, 2023</time>
+                    </div>
 
-                    <span class="dot"></span>
+                    <h3 class="h3 blog-item-title">API Design Principles</h3>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Best practices for designing scalable and maintainable
+                      APIs in microservices architecture.
+                    </p>
                   </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat,
-                    velit esse cillum.
-                  </p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </section>
-      </article>
-
-      <!--
+        <!--
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d388598.1972671332!2d51.44064828221881!3d32.65408029738144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f71d2a193220b0d%3A0x10e1c2495273ac1f!2sIsfahan%2C%20Iran!5e0!3m2!1sen!2s!4v1701521879840"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
 
-        <section class="contact-form">
-          <h3 class="h3 form-title">Contact Form</h3>
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input />
+            <form action="https://formspree.io/f/mrgjzgkl" method="POST" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  id="fullname"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                  aria-label="Full name"
+                  aria-required="true"
+                />
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required
-                data-form-input />
-            </div>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                  aria-label="Email address"
+                  aria-required="true"
+                />
+              </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+              <textarea
+                id="message"
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+                aria-label="Your message"
+                aria-required="true"
+                rows="5"
+              ></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-          </form>
-        </section>
-      </article>
-    </div>
-  </main>
+              <button class="form-btn" type="submit" data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
 
-  <!--
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!--
+    <!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
+    <!--
+    - Footer with legal links
+  -->
+    <footer style="text-align: center; padding: 20px; margin-top: 30px; color: var(--light-gray-70); font-size: var(--fs-7);">
+      <p>&copy; <span id="currentYear"></span> Misagh Fereidounpour. All rights reserved.</p>
+      <p>
+        <a href="/privacy-policy.html" style="color: var(--orange-yellow-crayola); margin: 0 10px;">Privacy Policy</a> |
+        <a href="/terms-of-service.html" style="color: var(--orange-yellow-crayola); margin: 0 10px;">Terms of Service</a>
+      </p>
+    </footer>
+
+    <!--
+    - Script to update current year
+  -->
+    <script>
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>

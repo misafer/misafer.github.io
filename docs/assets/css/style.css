@@ -1378,6 +1378,45 @@ textarea.form-input::-webkit-resizer {
 \*-----------------------------------*/
 
 /**
+ * responsive for smaller screens first
+ */
+
+@media (max-width: 449px) {
+  /**
+   * Adjust elements for very small screens
+   */
+
+  .sidebar {
+    margin: 10px 8px;
+    padding: 12px;
+  }
+
+  .info-content .name {
+    font-size: var(--fs-3);
+    line-height: 1.3;
+  }
+
+  .article-title {
+    font-size: var(--fs-2);
+  }
+
+  .project-list,
+  .blog-posts-list {
+    grid-template-columns: 1fr;
+  }
+
+  .input-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  /* Ensure good spacing on small screens */
+  .contact-form,
+  .mapbox {
+    margin: 20px 10px;
+  }
+}
+
+/**
  * responsive larger than 450px screen
  */
 
@@ -1391,15 +1430,19 @@ textarea.form-input::-webkit-resizer {
     min-width: calc(33.33% - 10px);
   }
 
-
-
   /**
-   * #PORTFOLIO, BLOG 
+   * #PORTFOLIO, BLOG
    */
 
   .project-img,
   .blog-banner-box {
     height: auto;
+  }
+
+  /* Improve image presentation */
+  .project-img img,
+  .blog-banner-box img {
+    min-height: 200px;
   }
 
 }
@@ -1873,6 +1916,11 @@ textarea.form-input::-webkit-resizer {
     margin-left: auto;
   }
 
+  /* Ensure better readability on medium screens */
+  .about-text {
+    font-size: var(--fs-5);
+  }
+
 }
 
 
@@ -2153,4 +2201,68 @@ textarea.form-input::-webkit-resizer {
     max-width: 700px;
   }
 
+}
+
+/*-----------------------------------*\
+  #ACCESSIBILITY & PERFORMANCE
+\*-----------------------------------*/
+
+/* Focus indicators for keyboard navigation */
+button:focus,
+input:focus,
+textarea:focus,
+a:focus {
+  outline: 2px solid var(--orange-yellow-crayola);
+  outline-offset: 2px;
+}
+
+/* Screen reader only class */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Improve touch targets for mobile devices */
+button,
+.navbar-link,
+.contact-link {
+  min-height: 44px;
+  min-width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Optimize images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .icon-box {
+    border: 2px solid;
+  }
+
+  .navbar-link:hover,
+  .navbar-link:focus {
+    text-decoration: underline;
+  }
 }
